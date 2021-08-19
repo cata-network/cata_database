@@ -1,0 +1,13 @@
+[Unit]
+Description=Drill Embedded Daemon
+After=network.service
+
+[Service]
+Type=forking
+Environment="DRILL_HOME=/home/drill/apache-drill-1.16.0"
+ExecStart=/usr/bin/env tmux new-session -s drill -d ${DRILL_HOME}/bin/drill-embedded
+WorkingDirectory=${DRILL_HOME}
+RemainAfterExit=false
+Restart=always
+RestartSec=5s
+

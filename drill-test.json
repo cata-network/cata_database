@@ -1,0 +1,17 @@
+[
+	{
+		"name": "John Doe",
+		"age": 35,
+		"isMale": true
+	},
+	{
+		"name": "HAL9000",
+		"age": 58,
+		"isMale": false
+	},
+	{
+		"name": "Winnie Poo",
+		"age": 90,
+		"isMale": true
+	}
+]
